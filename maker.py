@@ -1,8 +1,7 @@
 import subprocess
+import os
 
-subprocess.run(["git", "clone", "https://github.com/LostRuins/koboldcpp.git"])
-
-print("Repository cloned successfulily!")
-
-subprocess.run(["cd", "koboldcpp"])
-subprocess.run(["make", "LLAMA_CUBLAS=1"])
+os.system("git clone https://github.com/LostRuins/koboldcpp.git
+print("cloned")
+os.system("cd koboldcpp")
+os.system("make LLAMA_CUBLAS=1")
